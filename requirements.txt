@@ -2,3 +2,4 @@ beautifulsoup4
 geopandas
 keplergl
 streamlit_keplergl
+selenium
