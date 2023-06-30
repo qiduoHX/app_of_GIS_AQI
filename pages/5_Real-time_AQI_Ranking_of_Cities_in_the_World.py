@@ -10,7 +10,7 @@ from PIL import Image
 @st.cache
 def crawl_data():
     # 设置Edge浏览器驱动路径
-    browser = webdriver.Edge(executable_path=r'C:\appsforwebgis\msedgedriver.exe')
+    browser = webdriver.Edge(executable_path=r'./msedgedriver.exe')
 
     # 打开网站
     browser.get("https://www.iqair.cn/cn/world-air-quality-ranking")
