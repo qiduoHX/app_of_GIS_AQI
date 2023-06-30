@@ -9,8 +9,14 @@ from PIL import Image
 
 @st.cache
 def crawl_data():
-    # 设置Edge浏览器驱动路径
-    browser = webdriver.Edge(executable_path=r'./msedgedriver.exe')
+    # 获取当前脚本所在目录
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # 将相对路径和当前目录路径拼接起来，得到WebDriver的执行路径
+    webdriver_path = os.path.join(current_dir, "msedgedriver.exe")
+
+    # 使用拼接后的路径作为webdriver的执行路径
+    browser = webdriver.Edge(executable_path=webdriver_path)
 
     # 打开网站
     browser.get("https://www.iqair.cn/cn/world-air-quality-ranking")
