@@ -1,1 +1,9 @@
 beautifulsoup4
+geopandas
+KeplerGl
+keplergl_static
+datetime
+webdriver
+os
+Image
+csv
