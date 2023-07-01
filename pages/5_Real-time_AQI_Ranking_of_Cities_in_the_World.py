@@ -9,7 +9,7 @@ from PIL import Image
 
 with st.spinner("正在加载数据，请稍候..."):
     import time
-    time.sleep(10)
+    time.sleep(2)
 
 @st.cache
 def crawl_data():
