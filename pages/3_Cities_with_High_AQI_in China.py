@@ -5,7 +5,7 @@ import streamlit as st
 
 with st.spinner("正在加载数据，请稍候..."):
     import time
-    time.sleep(5)
+    time.sleep(15)
 
 # 发送请求并获取响应
 url = "https://www.air-level.com/rank"
