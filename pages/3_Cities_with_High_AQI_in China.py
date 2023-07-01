@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+import streamlit as st
 
 with st.spinner("正在加载数据，请稍候..."):
     import time
