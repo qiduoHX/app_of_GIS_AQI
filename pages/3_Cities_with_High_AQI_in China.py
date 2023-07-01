@@ -2,6 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+with st.spinner("正在加载数据，请稍候..."):
+    import time
+    time.sleep(5)
+
 # 发送请求并获取响应
 url = "https://www.air-level.com/rank"
 response = requests.get(url)
