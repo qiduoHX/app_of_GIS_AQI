@@ -7,7 +7,7 @@ from datetime import datetime
 
 with st.spinner("正在加载数据，请稍候..."):
     import time
-    time.sleep(15)
+    time.sleep(3)
 
 # 获取当前北京时间的小时数
 current_time = datetime.now().strftime("%Y年%m月%d日%H") + "时"
