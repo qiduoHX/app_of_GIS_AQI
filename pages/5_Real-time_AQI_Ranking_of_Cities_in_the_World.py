@@ -20,7 +20,7 @@ def crawl_data():
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
-    table = soup.find("table", class_="mb30")
+    table = soup.find("table")
     data = []
     for row in table.tbody.find_all("tr"):
         rank = row.find_all("td")[0].get_text().strip()
